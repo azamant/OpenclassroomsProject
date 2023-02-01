@@ -1,0 +1,44 @@
+<html>
+    <head>
+        <title>P9 Recommandation</title>
+        <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <script  src="https://code.jquery.com/jquery-3.6.3.js" integrity="sha256-nQLuAZGRRcILA+6dMBOvcRh5Pe310sBpanc6+QBmyVM="   crossorigin="anonymous"></script>
+    </head>
+    <body>
+        <div class="w3-container">
+            <h1>Projet 9 Image segmentation</h1>
+            <p>Recommandation d'article:</p>
+        </div>
+        <div class="w3-container w3-teal">
+            <h2>Client Id</h2>
+            <form action="/", method="post" enctype="multipart/form-data">
+                <input list="Client_id" name="Client_id" placeholder="707">
+                    <datalist id="Client_id">
+                        <option value="707">
+                        <option value="11743">
+                        <option value="75658">
+                        <option value="217129">
+                    </datalist>
+                <input class="w3-input" type="submit" value="Prediction Article">
+            </form>
+        </div>
+        <br>
+        <div class="w3-container">
+            {% if prediction %}
+                <div class="w3-card-4 w3-col s6" style="width:50%">
+                    <div class="w3-container w3-green">
+                        <h2>Output</h2>
+                    </div>
+                    <ul>
+                        <li>Article 1 = {{ prediction[0] }}</li>
+                        <li>Article 2 = {{ prediction[1] }}</li>
+                        <li>Article 3 = {{ prediction[2] }}</li>
+                        <li>Article 4 = {{ prediction[3] }}</li>
+                        <li>Article 5 = {{ prediction[4] }}</li>
+                      </ul>
+                </div>
+            {% endif %}
+        </div>
+    </body>
+</html>
