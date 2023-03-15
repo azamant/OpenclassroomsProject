@@ -23,7 +23,7 @@ from flight_booking_recognizer import FlightBookingRecognizer
 #loop = asyncio.get_event_loop()
 
 CONFIG              = DefaultConfig()
-SETTINGS            = BotFrameworkAdapterSettings("","")
+SETTINGS            = BotFrameworkAdapterSettings(CONFIG.APP_ID, CONFIG.APP_PASSWORD)
 MEMORY              = MemoryStorage()
 USER_STATE          = UserState(MEMORY)
 CONVERSATION_STATE  = ConversationState(MEMORY)
