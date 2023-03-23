@@ -1,0 +1,27 @@
+{
+  "$schema": "http://adaptivecards.io/schemas/adaptive-card.json",
+  "type": "AdaptiveCard",
+  "version": "1.0",
+  "body": [
+    {
+      "type": "Image",
+      "url": "https://i.imgur.com/Vhs3bwR.png",
+      "size": "stretch"
+    },
+    {
+      "type": "TextBlock",
+      "size": "default",
+      "isSubtle": "true",
+      "text": "Hello, I am yout FlyMe Bot helper. Please greet me and I will help you book your plane :). At any step of the process you can ask for help with any sentence containing 'help' or '?'. You can also cancel with any sentence containing 'quit' or 'cancel'. \n To make your booking, I need the 5 following informations:\n- Departure city\n- Destination city\n- Departure date\n- Return date\n- Budget for the trip",
+      "wrap": true,
+      "maxLines": 0
+    }
+  ],
+  "actions": [
+    {
+      "type": "Action.OpenUrl",
+      "title": "Git Project Overview",
+      "url": "https://github.com/azamant/OpenclassroomsProject"
+    }
+  ]
+}
