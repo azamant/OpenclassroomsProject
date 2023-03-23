@@ -10,6 +10,7 @@ from msrest.authentication import CognitiveServicesCredentials
 
 authoringKey = 'f5f6103ab2534da097cd3d2101260b07'
 authoringEndpoint = 'https://luischatbotzamant-authoring.cognitiveservices.azure.com/'
+SUBSCRIPTION_KEY_ENV_NAME = os.environ.get('LuisAuthKey')
 
 def booking_app(subscription_key):
     """Authoring.
